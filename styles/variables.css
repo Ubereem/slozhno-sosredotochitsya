@@ -5,12 +5,13 @@
 /* Файл variables.css */
 :root {
   --accent-color: #ff0070;
-  --color-text: #f1b2c3;
+  --text-color: #f1b2c3;
   --intro-color: #DB00FF;
-  --hdng-color-1: #ff0070;
-  --hdng-color-2: #000028;
-  --btn-hover: #ff007040;
-  --btn-color: #ff0070;
+  --intro-shadow: #ff0070;
+  --heading-color-1: #ff0070;
+  --heading-color-2: #000028;
+  --button-hover: #ff007040;
+  --button-color: #ff0070;
   --angle-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
 }

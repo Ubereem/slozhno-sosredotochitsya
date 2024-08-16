@@ -12,14 +12,14 @@
   line-height: 95.7px;
   text-align: left;
   color: var(--intro-color);
-  text-shadow: 4px 4px 0 #FF8DCB;
+  text-shadow: 4px 4px 0 var(--intro-shadow);
 }
 
 .header__theme-menu-button {
   background: transparent;
   text-transform: lowercase;
   border: 1px solid transparent;
-  color: var(--btn-color);
+  color: var(--button-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 400;
@@ -28,13 +28,13 @@
   }
 
 .header__theme-menu-button_active {
-    border-color: var(--btn-color);
+    border-color: var(--button-color);
     cursor: default;
     pointer-events: none;
   }
 
 .header__theme-menu-button:hover {
-    border-color: var(--btn-hover);
+    border-color: var(--button-hover);
   }
   
 .header__theme-menu-button:focus {
@@ -42,7 +42,7 @@
   }
   
 .header__theme-menu-button:focus-visible {
-    border-block-end: 1px solid var(--btn-color);
+    border-block-end: 1px solid var(--button-color);
   }
 
 
@@ -52,6 +52,7 @@
   }
 
 .header__title {
+  color: var(--heading-color-2);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 700;
@@ -61,8 +62,14 @@
 }
 
 .title {
+  font-family: IBM Plex Mono;
+font-size: 18px;
+font-weight: 700;
+line-height: 23.4px;
+text-align: left;
+
   margin-bottom: 20px;
-  color: var(--hdng-color-1);
+  color: var(--heading-color-1);
 }
 
 .subtitle {
@@ -84,10 +91,11 @@
   font-weight: 400;
   line-height: 23.4px;
   text-align: left;
-  color: var(--color-text);
+  color: var(--text-color);
 }
 
 .subtitle-last {
+  color: var(--heading-color-2);
   margin-bottom: 10px;
   background-color: var(--accent-color);
   font-family: IBM Plex Mono;
@@ -129,8 +137,7 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
 .header {
   block-size: max(668px, 100vh);
   position: relative;
-  place-items: center;
-  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
   display: grid;
   margin-bottom: 40px;
 }
@@ -259,6 +266,7 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
   }
 
   .section-why {
+    gap: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
  }
@@ -266,7 +274,7 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
   .article_list-two {
     gap: 20px;;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 
   .section-how {
@@ -317,7 +325,6 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
 }
 
 .subtitle .subtitle-last .subtitle-gallery {
-    margin-bottom: 20px;
   }
 }
 
