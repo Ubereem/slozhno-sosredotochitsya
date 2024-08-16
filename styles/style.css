@@ -2,7 +2,6 @@
 
 .page {
   padding: 10px;
-  max-width: 1024px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -13,7 +12,7 @@
   line-height: 95.7px;
   text-align: left;
   color: var(--intro-color);
-  text-shadow: 4px 4px 0 #FF0070;
+  text-shadow: 4px 4px 0 #FF8DCB;
 }
 
 .header__theme-menu-button {

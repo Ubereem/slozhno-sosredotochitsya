@@ -19,3 +19,18 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+@media (prefers-color-scheme: dark) {
+:root {
+  --accent-color: #ff0070;
+  --color-text: #f1b2c3;
+  --intro-color: #DB00FF;
+  --hdng-color-1: #ff0070;
+  --hdng-color-2: #000028;
+  --btn-hover: #ff007040;
+  --btn-color: #ff0070;
+  --angle-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
+        /* Дублируем переменные светлой темы */    
+    }
+}
