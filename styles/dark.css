@@ -35,6 +35,5 @@
   --button-color: #ff0070;
   --angle-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
-        /* Дублируем переменные светлой темы */    
-}
+ }
 }

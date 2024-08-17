@@ -281,13 +281,6 @@ text-align: center;
     bottom: 30px;
   }
 
-  .footer-decorated-zone::before {
-    top: 40px  
-  }
-
-  .page {
-  }
-
   .header__title {
     justify-self: end;
     width: 364px;
@@ -332,12 +325,8 @@ text-align: center;
     grid-column: 1/2;
     grid-row: 2/4; 
   }
-      
- .gallery__item--4 { 
-      
-  }
-      
-  .gallery__item--5 { 
+         
+.gallery__item--5 { 
     grid-column: 2/4;
   }
 
