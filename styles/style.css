@@ -75,7 +75,7 @@ text-align: left;
 .subtitle {
   margin-bottom: 10px;
   background-color: var(--accent-color);
-  color: #000028;
+  color: var(--heading-color-2);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 700;
@@ -105,18 +105,37 @@ text-align: left;
   text-align: left;
   }
 
+.subtitle_unique {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  background-color: var(--accent-color);
+  color: var(--heading-color-2);
+margin-bottom: 20px;
+}
+
   .subtitle-gallery {
 margin-bottom: 10px;
   }
 
+
+  .gallery {
+    margin-bottom: 20px;
+  } 
+
 img {
     object-fit: cover;
+    object-position: center;
     height: 100%;
     width: 100%;
   }
 
 .gallery__list img {
+  margin-bottom: 5px;
   object-fit: cover;
+  object-position: center ;
 }
 
 .page {
@@ -127,7 +146,7 @@ img {
 }
 
 .link-shadow {
-text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
+  text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
 }
 
 .link-shadow:hover {
@@ -140,6 +159,7 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
   align-items: center;
   display: grid;
   margin-bottom: 40px;
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 .decorated-zone {
@@ -147,6 +167,12 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
   }
   
 .header-rec {
+  font-family: IBM Plex Mono;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+text-align: center;
+
   position: absolute;
   text-transform: uppercase;
   top: 2px;
@@ -228,20 +254,19 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
     bottom: 0;
   }
 
-.section-why, .section-what, .section-how  {
+.section-why, .section-what, .section-how {
   margin-bottom: 50px;
 } 
 
 .header__theme-menu-list {
+  padding-right: 6px;
   font-family: IBM Plex Mono;
   font-size: 25px;
   font-weight: 400;
   line-height: 25px;
   text-align: center;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  gap: 13px;
 }
 
 /* МЕДИАЗАПРОСЫ --> */
@@ -254,7 +279,8 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
   }
 
   .footer-decorated-zone::before {
-    top: 40px  }
+    top: 40px  
+  }
 
   .page {
     padding: 20px;
@@ -274,7 +300,6 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
   .article_list-two {
     gap: 20px;;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
   }
 
   .section-how {
@@ -302,8 +327,8 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
   }
       
   .gallery__item--3 { 
-      grid-column: 1/2;
-      grid-row: 2/4; 
+    grid-column: 1/2;
+    grid-row: 2/4; 
   }
       
  .gallery__item--4 { 
@@ -329,6 +354,12 @@ text-decoration: none;  text-shadow: 2px 2px 0 #FF0070;
 }
 
 @media (width >= 1024px) {
+
+  .article_list-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .header__theme-menu {
     justify-self: center;
     align-self: start;

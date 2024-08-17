@@ -38,11 +38,17 @@
     --bg-image: url(../images/cover-image-light.png);
         /* Дублируем переменные светлой темы */    
     }
+
+  .header-rec {
+      display: none;
+    }
 }
 
 .page.theme_light .header-rec {
   display: none;
 }
+
+
  @media (width >= 1024px) {
   .intro-decor {
     text-shadow: 4px 4px 0 #ff0070;

@@ -23,7 +23,7 @@
 
 @media (prefers-color-scheme: dark) {
 :root {
-  --accent-color: #ff0070;
+   --accent-color: #ff0070;
   --text-color: #f1b2c3;
   --intro-color: #DB00FF;
   --intro-shadow: #ff0070;
@@ -34,5 +34,5 @@
   --angle-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
         /* Дублируем переменные светлой темы */    
-    }
+}
 }
