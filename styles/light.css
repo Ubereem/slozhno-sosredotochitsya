@@ -43,7 +43,7 @@
     --bg-image: url(../images/cover-image-light.png);
   }
 
-  .pahe.page.theme_light .header-rec {
+  .header-rec {
       display: none;
     }
   }
