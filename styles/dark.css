@@ -5,6 +5,7 @@
 */
 
 .page.theme_dark {
+  --bg-color: #000028;
   --accent-color: #ff0070;
   --text-color: #f1b2c3;
   --intro-color: #DB00FF;
@@ -23,6 +24,7 @@
 
 @media (prefers-color-scheme: dark) {
 :root {
+  --bg-color: #000028;
    --accent-color: #ff0070;
   --text-color: #f1b2c3;
   --intro-color: #DB00FF;
