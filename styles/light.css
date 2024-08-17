@@ -8,6 +8,7 @@
 
 
 .page.theme_light {
+  --bg-color: #fff1f7;
   --accent-color: #FF8DCB;
   --text-color: #353430;
   --intro-color: #FFC2E6;
@@ -29,6 +30,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --bg-color: #fff1f7;
     --accent-color: #FF8DCB;
     --text-color: #353430;
     --intro-color: #FFC2E6;
