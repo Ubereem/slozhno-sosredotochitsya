@@ -70,7 +70,7 @@ text-align: left;
 }
 
 .header__subtitle {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   background-color: var(--accent-color);
   color: var(--heading-color-2);
   font-family: IBM Plex Mono;
@@ -117,12 +117,6 @@ margin-bottom: 20px;
   .subtitle-gallery {
 margin-bottom: 10px;
   }
-
-
-  .gallery {
-        padding: 0 10px 0 10px;
-    margin-bottom: 30px;
-  } 
 
 img {
     object-fit: cover;
@@ -256,10 +250,9 @@ text-align: center;
     left: 10px
   }
 
-.section-why, .section-what, .section-how {
-  padding: 0 10px 0 10px;
-  margin-bottom: 50px;
-} 
+  .main {
+    padding: 0 10px 0 10px;;
+  }
 
 .header__theme-menu-list {
   gap: 9px;
@@ -272,18 +265,37 @@ text-align: center;
   flex-direction: column;
 }
 
+.section {
+  margin-bottom: 50px;
+}
+
+.gallery {
+  margin-bottom: 30px;
+}
+
+
 /* МЕДИАЗАПРОСЫ --> */
 
 
 
 @media (width >= 768px) {
+  .header {
+    margin: 10px 10px 50px 10px;
+  }
+  
+  .main {
+    padding: 0 20px 0 20px;;
+  }
+
   .section-what .title {
     display: grid;
     grid-template-columns: min-content 1fr 1fr;
   }
-  .page {
-    padding: 10px;
-  }
+
+ .section-what {
+  margin-bottom: 60px;
+ }
+
   .decorated-zone::after {
     bottom: 30px;
   }
@@ -292,6 +304,7 @@ text-align: center;
   }
 
   .section-why {
+    margin-bottom: 60px;
     gap: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -302,10 +315,15 @@ text-align: center;
   }
 
   .section-how {
+    margin-bottom: 60px;
+    gap: 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 236px auto;
   }
       
+ .gallery {
+ }
+  
   .gallery__list {
     height: 100%;
     grid-template-columns: repeat(3, 1fr);
