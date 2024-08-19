@@ -70,7 +70,6 @@ text-align: left;
 }
 
 .header__subtitle {
-  margin-bottom: 0;
   background-color: var(--accent-color);
   color: var(--heading-color-2);
   font-family: IBM Plex Mono;
@@ -103,30 +102,19 @@ text-align: left;
   text-align: left;
   }
 
-.subtitle_unique {
-  font-family: IBM Plex Mono;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  text-align: left;
-  background-color: var(--accent-color);
-  color: var(--heading-color-2);
-margin-bottom: 20px;
-}
-
   .subtitle-gallery {
 margin-bottom: 10px;
   }
 
 img {
+  margin-bottom: 6px;
     object-fit: cover;
     object-position: center;
     inline-size: 100%;
     block-size: 100%;
   }
 
-.gallery__list img {
-  margin-bottom: 6px;
+.gallery__item {
   object-fit: cover;
   object-position: center ;
 }
@@ -277,8 +265,19 @@ text-align: center;
 /* МЕДИАЗАПРОСЫ --> */
 
 
-
 @media (width >= 768px) {
+  .footer-decorated-zone::before {
+    top: 38px;
+    right: 20px;
+  }
+  img {
+    margin-bottom: 0;
+  }
+
+.footer-decorated-zone::after {
+    left: 20px;
+    bottom: 0;
+  }
   .header {
     margin: 10px 10px 50px 10px;
   }
@@ -287,6 +286,18 @@ text-align: center;
     padding: 0 20px 0 20px;;
   }
 
+
+
+  .header__theme-menu-list {
+    margin-bottom: 20px;
+  }
+  .header__subtitle {
+    margin-bottom: 30px;
+    justify-self: end;
+    width: 364px;
+  }
+
+  
   .section-what .title {
     display: grid;
     grid-template-columns: min-content 1fr 1fr;
@@ -300,8 +311,6 @@ text-align: center;
     bottom: 30px;
   }
 
-  .title-decor {
-  }
 
   .section-why {
     margin-bottom: 60px;
@@ -322,13 +331,14 @@ text-align: center;
   }
       
  .gallery {
+  margin-bottom: 40px;
  }
   
   .gallery__list {
+    padding-top: 10px;
     height: 100%;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    gap: 10px;
     display: grid;
   }
         
@@ -344,6 +354,7 @@ text-align: center;
   }
       
   .gallery__item--3 {
+    height: 100%;
     grid-column: 1/2;
     grid-row: 2/4;
   }
@@ -357,7 +368,9 @@ text-align: center;
   justify-self: start;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
-
+.footer-decorated-zone {
+  padding: 20px;
+}
 .footer-decor {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
