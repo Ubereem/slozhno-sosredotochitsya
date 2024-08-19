@@ -385,7 +385,8 @@ text-align: center;
 
   .article_list-two {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
   }
 
   .header__theme-menu {
@@ -397,7 +398,6 @@ text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 36px;
   }
 
   .intro-decor {
@@ -408,6 +408,14 @@ text-align: center;
   text-align: left;
 }
 
-.title-decor {
+.section-how {
+  margin-bottom: 60px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 315px auto;
+}
+
+.header__subtitle {
+  width: 491px;
 }
 }
