@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .intro-decor {
-  font-family: IBM Plex Mono;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
   font-size: 116px;
   font-weight: 700;
   line-height: 95.7px;
@@ -70,7 +70,7 @@
 .header__subtitle {
   background-color: var(--accent-color);
   color: var(--heading-color-2);
-  font-family: IBM Plex Mono;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -126,7 +126,7 @@ img {
 
 .link-shadow {
   text-decoration: none;
-  text-shadow: 2px 2px 0 #FF0070;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .link-shadow:hover {
@@ -331,10 +331,11 @@ img {
  }
   
   .gallery__list {
+    line-height: 0;
     padding-top: 10px;
     height: 100%;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 20px;
     display: grid;
   }
         
